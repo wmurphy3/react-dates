@@ -11,6 +11,7 @@ export default function getVisibleDays(
 
   const visibleDaysByMonth = {};
   let currentMonth = withoutTransitionMonths ? month.clone() : month.clone().subtract(1, 'month');
+  console.log(currentMonth);
   for (let i = 0; i < (withoutTransitionMonths ? numberOfMonths : numberOfMonths + 2); i += 1) {
     const visibleDays = [];
 
