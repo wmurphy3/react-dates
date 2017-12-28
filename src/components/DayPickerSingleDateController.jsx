@@ -368,7 +368,8 @@ export default class DayPickerSingleDateController extends React.Component {
   onNextMonthClick() {
     const { onNextMonthClick, numberOfMonths, enableOutsideDays } = this.props;
     const { currentMonth, visibleDays } = this.state;
-
+    console.log("next clicked");
+    console.log(currentMonth);
     const newVisibleDays = {};
     Object.keys(visibleDays).sort().slice(1).forEach((month) => {
       newVisibleDays[month] = visibleDays[month];
